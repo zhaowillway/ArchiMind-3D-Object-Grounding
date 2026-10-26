@@ -271,6 +271,15 @@ The model can be retrained using the scripts and data preparation procedures des
 
 Model weight files and original competition datasets are distributed separately from the source-code repository.
 
+### Pre-trained Model Weights
+
+The trained Baseline-3B model weights and ONNX files are available from Baidu Netdisk:
+
+- **Download:** [Baidu Netdisk – ArchiMind-3D Model Weights](https://pan.baidu.com/s/10jbdyTipyYWHj5JgMK_2lQ?pwd=u2pi)
+- **Extraction code:** `u2pi`
+
+The model package includes the PyTorch weights, ONNX model, and feature normalization configuration.
+
 ## 11. License
 
 This repository is released under the **MIT License**. See [LICENSE](LICENSE) for the complete license terms.
