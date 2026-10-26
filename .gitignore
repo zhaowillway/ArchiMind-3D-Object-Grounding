@@ -1,0 +1,32 @@
+# Competition data: non-commercial; redistribution prohibited
+VLMOD(train+test)/
+data/
+*.jpg
+*.jpeg
+*.png
+# Weights and sensitive run outputs
+experiments/
+outputs/
+final_submission/
+submission/
+*.pth
+*.onnx
+*.pb
+*.joblib
+*.zip
+*.jsonl
+predictions*.json
+# Credentials / secrets
+.env
+.env.*
+*.pem
+*.key
+*token*
+# Python / IDE
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.pytest_cache/
+.DS_Store

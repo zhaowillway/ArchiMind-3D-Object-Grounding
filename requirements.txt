@@ -1,0 +1,10 @@
+# Primary Baseline-3B runtime / training
+numpy>=1.24,<3
+scikit-learn>=1.3
+joblib>=1.3
+torch>=2.2
+# Historical baselines / utility scripts
+scipy>=1.11
+Pillow>=10
+# ONNX model export (optional during training, required for PyTorch contest delivery)
+onnx>=1.15
