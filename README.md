@@ -152,6 +152,29 @@ experiments/Baseline_3B/best_model.pth
 
 Additional training outputs include validation metrics, threshold scans, and training history.
 
+### 6.3. Feature Ablation Study
+
+Feature ablation experiments evaluate the contribution of individual feature groups to Baseline-3B candidate-description matching. Eight configurations are evaluated, including the full model and seven feature-removal variants.
+
+Run the experiments using:
+
+```bash
+python scripts/ablate_baseline3b.py --root . --out experiments/Baseline_3B_Ablation --epochs 15 --batch-size 512 --seed 2026 --threshold 0.5
+```
+
+The experiments use a consistent training/validation split, network architecture, and training configuration. Each model is retrained from scratch with the selected feature groups disabled.
+
+The evaluation results are saved to:
+
+```text
+experiments/Baseline_3B_Ablation/
+├── ablation_results.csv
+├── ablation_results.json
+└── ablation_history.json
+```
+
+The reported precision, recall, and F1 scores are based on reconstructed candidate pools and represent internal validation results rather than official VLP benchmark scores.
+
 ## 7. ONNX Export
 
 The trained PyTorch model can be exported to ONNX for model deployment and reproducibility.
