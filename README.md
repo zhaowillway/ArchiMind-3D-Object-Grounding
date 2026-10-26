@@ -1,6 +1,8 @@
-# VLMOD Candidate-Aware Language Matching
+# ArchiMind-3D: Language-Guided Multi-Object Grounding
 
-**VLMOD-Competition-2026**
+Developed by the ArchiMind Team for the 2026 VLP Challenge.
+
+2026 VLP 挑战赛参赛作品
 
 This repository contains the Python source code for the VLMOD candidate-language matching experiments (Baseline-3A and Baseline-3B), plus optional earlier geometric regression baselines when available. The primary model is a PyTorch multilayer perceptron (MLP) operating on structured candidate-object properties and textual-condition features. **It is not an image-based end-to-end vision-language network.**
 
